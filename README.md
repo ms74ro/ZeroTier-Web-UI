@@ -32,8 +32,8 @@ Basic Auth, CSRF protection, 12 languages and a dark theme by default.
 ## Installation
 
 ```bash
-git clone https://github.com/ms74ro/ZeroTier-Web-UI.git
-cd ZeroTier-Web-UI
+git clone https://github.com/ms74ro/ZeroTier-Web-UI.git zerotier-web
+cd zerotier-web
 
 # create the credentials file (first user: -c; omit -c for additional users)
 htpasswd -c .htpasswd admin
@@ -51,7 +51,7 @@ curl -I http://127.0.0.1:8080/   # 401 Unauthorized
 ### Project layout
 
 ```
-.
+zerotier-web/
 ├── docker-compose.yml
 ├── .htpasswd                 # created by you, never committed
 └── zerotier-web-ui/

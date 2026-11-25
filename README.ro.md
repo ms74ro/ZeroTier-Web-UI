@@ -31,8 +31,8 @@ Se construiește local din sursă (fără imagini terțe), cu Basic Auth, protec
 ## Instalare
 
 ```bash
-git clone https://github.com/ms74ro/ZeroTier-Web-UI.git
-cd ZeroTier-Web-UI
+git clone https://github.com/ms74ro/ZeroTier-Web-UI.git zerotier-web
+cd zerotier-web
 
 # fișierul de utilizatori (primul user: -c; fără -c pentru useri suplimentari)
 htpasswd -c .htpasswd admin
@@ -50,7 +50,7 @@ curl -I http://127.0.0.1:8080/   # 401 Unauthorized
 ### Structura proiectului
 
 ```
-.
+zerotier-web/
 ├── docker-compose.yml
 ├── .htpasswd                 # creat de tine, nu se comite
 └── zerotier-web-ui/
