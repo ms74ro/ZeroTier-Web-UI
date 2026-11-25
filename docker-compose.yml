@@ -1,0 +1,12 @@
+services:
+  web:
+    build: ./zerotier-web-ui
+    container_name: zerotier-web
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - TZ=Europe/Bucharest
+    volumes:
+      - /var/lib/zerotier-one:/var/lib/zerotier-one:ro
+      - ./.htpasswd:/app/.htpasswd:ro
+      - ./zerotier-web-ui/language:/app/language:ro
