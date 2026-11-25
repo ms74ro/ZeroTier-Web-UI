@@ -6,6 +6,12 @@ Interfață web proprie, într-un singur container, pentru daemonul **ZeroTier i
 Afișează Node ID și status, rețelele alăturate, permite join/leave și vizualizarea peers dintr-un browser.
 Se construiește local din sursă (fără imagini terțe), cu Basic Auth, protecție CSRF, 12 limbi și mod întunecat implicit.
 
+## Capturi de ecran
+
+![ZeroTier Web UI](docs/screenshot-main.png)
+
+![Peers](docs/screenshot-peers.png)
+
 ## Funcții
 
 - Un singur container Docker (Flask + waitress) pe portul **8080**

@@ -7,6 +7,12 @@ It shows the Node ID and status, lists joined networks, lets you join / leave ne
 inspect peers from a browser. It is built locally from source (no third-party image), with
 Basic Auth, CSRF protection, 12 languages and a dark theme by default.
 
+## Screenshots
+
+![ZeroTier Web UI](docs/screenshot-main.png)
+
+![Peers](docs/screenshot-peers.png)
+
 ## Features
 
 - Single Docker container (Flask + waitress) on port **8080**
