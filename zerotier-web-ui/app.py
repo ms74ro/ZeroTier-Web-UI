@@ -205,7 +205,9 @@ TEMPLATE = """
   .subtitle { color: var(--text-muted); font-size: 14px; margin: 0 0 24px 0; }
 
   .toggles { display: flex; gap: 8px; }
-  .app-footer { margin-top: 28px; text-align: center; font-size: 11px; opacity: .45; }
+  .app-footer { margin-top: 28px; text-align: center; font-size: 11px; opacity: .45; line-height: 1.6; }
+  .app-footer a { color: inherit; text-decoration: none; }
+  .app-footer a:hover { text-decoration: underline; }
   .toggle-btn {
     background: var(--card-bg); border: 1px solid var(--btn-border); border-radius: 6px;
     padding: 6px 14px; font-size: 13px; font-weight: 600; color: var(--btn-text);
@@ -663,7 +665,7 @@ TEMPLATE = """
   applyTheme(localStorage.getItem('zt_theme') || 'dark');
 </script>
 
-<footer class="app-footer">v{{ version }}</footer>
+<footer class="app-footer">v{{ version }}<br>&copy; 2026 <a href="https://github.com/ms74ro/ZeroTier-Web-UI" target="_blank" rel="noopener">ms74ro</a></footer>
 
 </body>
 </html>
