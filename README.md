@@ -123,3 +123,9 @@ git tag (`v2026.11.25.1`). See [CHANGELOG.md](CHANGELOG.md).
 - **Empty language menu** — `zerotier-web-ui/language/` must exist on the host (Docker would mount an empty folder otherwise). Invalid JSON files are skipped silently; check with `python3 -m json.tool`.
 - **Build fails on `favicon.svg`** — the Dockerfile copies it explicitly; keep an SVG with that name.
 - **`403` on first join/leave after a restart** — refresh the page to get a new CSRF token.
+
+## License
+
+[MIT](LICENSE) © 2026 ms74ro. A Romanian translation, for information only, is in [LICENTA.md](LICENTA.md).
+
+ZeroTier is a trademark of ZeroTier, Inc. This is an independent project, not affiliated with or endorsed by ZeroTier, Inc. It only talks to the ZeroTier service through its local API and does not include ZeroTier code.

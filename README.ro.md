@@ -122,3 +122,9 @@ Valoarea este constanta `VERSION` din `zerotier-web-ui/app.py`, afișată în su
 - **Meniul de limbă e gol** — `zerotier-web-ui/language/` trebuie să existe pe host (altfel Docker montează un folder gol). Un JSON invalid e ignorat în tăcere; verifică cu `python3 -m json.tool`.
 - **Build eșuează la `favicon.svg`** — Dockerfile îl copiază explicit; păstrează un SVG cu acest nume.
 - **`403` la primul join/leave după restart** — reîncarcă pagina pentru un token CSRF nou.
+
+## Licență
+
+[MIT](LICENSE) © 2026 ms74ro ([traducerea în română](LICENTA.md), doar informativă). Poți folosi, modifica și redistribui aplicația liber, inclusiv comercial, cu condiția să păstrezi mențiunea de copyright și textul licenței. Aplicația este oferită fără nicio garanție.
+
+ZeroTier este o marcă înregistrată a ZeroTier, Inc. Acesta este un proiect independent, neafiliat și neaprobat de ZeroTier, Inc. Comunică cu serviciul ZeroTier doar prin API-ul lui local și nu include cod ZeroTier.
